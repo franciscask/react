@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+  text-decoration: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  background-color: #FAFAFA;
+  font-family: 'Roboto', Courier, monospace;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+  line-height: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+/*------------------*/
+
+input, textarea{
+  background: #ECF1F7;
+  font-family: 'Inter';
+  font-size: 90%;
+  color: black;
+  border-radius: 8px;
+  padding: 9px 7px 8px 7px;
+}
+textarea{
+  resize: none;
+}
+p{
+  font-family: 'Inter';
+}
+.MovieButton{
+  width: 90%;
+  height: 48px;
+  border: 1px solid;
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  padding: 7px 10px 7px 15px ;
+  margin-bottom: 8px;
+}
+.MovieButton:hover{
+  background-color: #EBF4FF;
+}
+.MovieButton:focus{
+  border-color: black;
+}
+.MBContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.MovieName{
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  width: 380px;
+  font-family: 'Inter';
+  font-size: 12px;
+  margin-bottom: 9px;
+  text-align: start;
+}
+.OtherMovieText{
+  font-size: 11px;
+  color: #6C6C6C;
+  margin-left: 3px;
+}
+.OtherMovieTextSeparator{
+  font-size: 11px;
+  margin-left: 10px;
+  margin-right: 7px;
+}
+.OtherMovieTextContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.MovieButtonList{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 11px;
+  padding-right: 12px;
+  padding-top: 10px;
+  overflow: scroll;
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.1);
+}
+.MovieButtonList::-webkit-scrollbar {
+  width: 0;
+}
+.InputField{
+  align-self: center;
+  height: 4vh;
+  width: 75%;
+}
+.SearchContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 5vh;
+  margin-bottom: 15px;
+}
+.SearchContainer button{
+  align-self: flex-start;
+  font-family: 'Inter';
+  font-size: 80%;
+  color: #336FEE;
+  background-color: #ECF1F7;
+  border-radius: 8px;
+  width: 15%;
+  height: 4vh;
+  margin-left: 17px;
+}
+.SearchContainer input{
+  align-self: flex-start;
+}
+.EditMovieForm{
+  font-family: 'Inter';
+  width: 70%;
+  height: 93vh;
+  padding-left: 22px;
+  padding-top: 10px;
+  padding-right: 10px;
+  display: none;
+}
+.EditMovieForm h1{
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+.EditMovieForm h2{
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.EditMovieForm textarea{
+  display: flex;
+  justify-self: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  vertical-align: start;
+  margin-bottom: 14px;
+}
+.MovieNameInput, .YearInput, .ImageInput, .RatingInput, .ActorsInput{
+  width: 325px;
+  height: 44px;
+}
+.DescriptionInput{
+  width: 640px;
+  height: 63px;
+}
+#DeveloperInput{
+  width: 325px;
+  height: 44px;
+  margin-bottom: 8px;
+}
+.Palka{
+  margin-top: 113px;
+  width: 100%;
+  height: 2px;
+  background-color: #D9D9D9;
+  margin-bottom: 13px;
+}
+.Accept{
+  font-size: 12px;
+  width: 85px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #FFDD2D;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.Decline{
+  width: 84px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #ECF1F7;;
+  color: #336FEE;
+  font-size: 12px;
+  margin-right: 22px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.EditButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.Header{
+  height: 7vh;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.Header h1{
+  font-size: 3vh;
+  font-weight: 600;
+  font-family: 'Inter';
+  align-self: center;
+}
+.Header button{
+  font-size: 1.5vh;
+  font-family: 'Inter';
+  background-color: #FFDD2D;
+  border-radius: 8px;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  height: 4vh;
+  align-self: center;
+}
+.HorContainer{
+  display: flex;
+  flex-direction: row;
+}
+.BottomMenu{
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  height: 8vh;
+  width: 100%;
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.1);
+}
+.BottomHorLine{
+  display:flex;
+  flex-direction: row;
+  margin-top: 2.5vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+.BottomHorLine h2{
+  font-family: 'Inter';
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+.BottomHorLine button{
+  font-size: 12px;
+  width: 85px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #FFDD2D;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.BottomMenu hr{
+  align-self: center;
+  width: 90%;
+  height: 2px;
+  background-color: #D9D9D9;
+}
+.Wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.InfoWrapper{
+  font-family: 'Inter';
+  width: 100%;
+  padding-top: 20px;
+  display: none;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+.FirstICont{
+  display:flex;
+  flex-direction: row;
+  padding-left: 15px;
+}
+.FirstICont img{
+  width: 300px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+.SecondICont{
+  display: flex;
+  flex-direction: column;
+}
+.IdAndButton{
+  padding-left: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.IdAndButton h2{
+  font-size: 16px;
+  font-weight: 400;
+}
+.IdAndButton a{
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 5px;
+}
+.IdAndButton a:hover{
+  background-color: #EBF4FF;
+}
+.SecondICont h1{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.SecondICont h2{
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #6C6C6C;
+}
+.ActorsInfo h3,#Params{
+  color: black;
+  font-size: 16px;
+}
+.ActorsInfo h3{
+  margin-bottom: 10px;
+}
+.ActorsInfo p{
+  margin-bottom: 8px;
+}
+.InfoRow{
+  display: flex;
+  flex-direction: row;
+}
+.InfoRow h3{
+  font-size: 16px;
+  color: #6C6C6C;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.FCont{
+  margin-right: 250px;
+}
+.ThirdICont{
+  display: flex;
+  flex-direction: row;
+}
+#description{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+#descContent{
+  margin-bottom: 15px;
+}
